@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del \"D:\\hansol-repository\\interaction-mock-service\\interaction-mock-service\\src\\main\\resources\\log4j2.xml\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

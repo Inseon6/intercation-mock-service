@@ -1,0 +1,35 @@
+server:
+  port: 6455
+
+spring:
+  data:
+    redis:
+      sentinel:
+        master: mymaster
+        nodes:
+          - 10.1.32.15:16381
+          - 10.1.32.15:16382
+          - 10.1.32.15:16383
+      password: hansol01!
+      database: 0
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 2
+          max-wait: 1000ms
+          time-between-eviction-runs: 30000ms
+
+logging:
+  file:
+    name: logs/mock_interaction.log
+    path: logs
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+       # SQL 로그 끄기
+    org.hibernate.type.descriptor.sql.BasicBinder: OFF # 파라미터 바인딩 로그 끄기
