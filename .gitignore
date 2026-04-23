@@ -1,0 +1,32 @@
+# build
+/build/
+.gradle/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# env
+.env
+
+# jar
+*.jar
+*.war
+
+# node (혹시 프론트 있으면)
+node_modules/
+
+# 기타
+*.out
+*.pid
