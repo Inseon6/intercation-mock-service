@@ -1,6 +1,0 @@
-2025-11-24 10:15:39 [main] INFO  c.d.i.InteractionMockServiceApplicationTests - Starting InteractionMockServiceApplicationTests using Java 21.0.8 with PID 9704 (started by Hansol in D:\hansol-repository\interaction-mock-service\interaction-mock-service)
-2025-11-24 10:15:39 [main] INFO  c.d.i.InteractionMockServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-11-24 10:15:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-11-24 10:15:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-11-24 10:15:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-2025-11-24 10:15:41 [main] INFO  c.d.i.InteractionMockServiceApplicationTests - Started InteractionMockServiceApplicationTests in 2.531 seconds (process running for 3.426)
