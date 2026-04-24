@@ -23,7 +23,7 @@ public class RedisStreamPublisher {
             String message = objectMapper.writeValueAsString(event);
             MapRecord<String, String, String> record = MapRecord.create(streamKey, Map.of("payload", message));
             redisTemplate.opsForStream().add(record);
-            log.debug("publishEvent: streamKey={}, event={}", streamKey, event);
+            log.info("publishEvent: streamKey={}, event={}", streamKey, event);
         } catch (JsonProcessingException e) {
             log.error("Failed to serialize event to JSON", e);
             throw new RuntimeException(e);
